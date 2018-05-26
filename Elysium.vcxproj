@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA497AC3-8C88-48DD-AFC2-2DDEF7F9F4A9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Gladiatorcheatzv2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>faxhook recode</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GLADIATORCHEATZV2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;GLADIATORCHEATZV2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GLADIATORCHEATZV2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>D:\Eigene Datei\Dokumente\Gladiatorcheatz v2\Gladiatorcheatz v2\DX9 SDK\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;GLADIATORCHEATZV2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AimRage.hpp" />
+    <ClInclude Include="Animation.hpp" />
+    <ClInclude Include="AntiAim.hpp" />
+    <ClInclude Include="BaseHandle.hpp" />
+    <ClInclude Include="BoneAccessor.hpp" />
+    <ClInclude Include="CClientState.hpp" />
+    <ClInclude Include="CColor.hpp" />
+    <ClInclude Include="characterset.hpp" />
+    <ClInclude Include="checksum_crc.hpp" />
+    <ClInclude Include="checksum_md5.hpp" />
+    <ClInclude Include="CInput.hpp" />
+    <ClInclude Include="ClientClass.hpp" />
+    <ClInclude Include="Color.hpp" />
+    <ClInclude Include="Combo.hpp" />
+    <ClInclude Include="Convar.hpp" />
+    <ClInclude Include="CUserCmd.hpp" />
+    <ClInclude Include="datamap.hpp" />
+    <ClInclude Include="Draw Manager.hpp" />
+    <ClInclude Include="EHandle.hpp" />
+    <ClInclude Include="Enums.hpp" />
+    <ClInclude Include="Event Listener.hpp" />
+    <ClInclude Include="extrapolation.h" />
+    <ClInclude Include="Fakelag.h" />
+    <ClInclude Include="Fonts.hpp" />
+    <ClInclude Include="Gamehooking.hpp" />
+    <ClInclude Include="GlobalVars.hpp" />
+    <ClInclude Include="glow_outline_effect.hpp" />
+    <ClInclude Include="GrenadePrediction.h" />
+    <ClInclude Include="Config Manager.hpp" />
+    <ClInclude Include="IAppSystem.hpp" />
+    <ClInclude Include="IBaseClientDll.hpp" />
+    <ClInclude Include="IClientEntity.hpp" />
+    <ClInclude Include="IClientEntityList.hpp" />
+    <ClInclude Include="IClientMode.hpp" />
+    <ClInclude Include="IClientNetworkable.hpp" />
+    <ClInclude Include="IClientRenderable.hpp" />
+    <ClInclude Include="IClientThinkable.hpp" />
+    <ClInclude Include="IClientUnknown.hpp" />
+    <ClInclude Include="ICollideable.hpp" />
+    <ClInclude Include="IConVar.hpp" />
+    <ClInclude Include="ICvar.hpp" />
+    <ClInclude Include="IEngineSound.hpp" />
+    <ClInclude Include="IEngineTrace.hpp" />
+    <ClInclude Include="IfaceMngr.hpp" />
+    <ClInclude Include="IGameEventmanager.hpp" />
+    <ClInclude Include="IHandleEntity.hpp" />
+    <ClInclude Include="ILocalize.hpp" />
+    <ClInclude Include="IMaterialSystem.hpp" />
+    <ClInclude Include="IMDLCache.hpp" />
+    <ClInclude Include="imgui.hpp" />
+    <ClInclude Include="imgui_impl_dx9.hpp" />
+    <ClInclude Include="imgui_internal.hpp" />
+    <ClInclude Include="IMoveHelper.hpp" />
+    <ClInclude Include="Input.hpp" />
+    <ClInclude Include="Install.hpp" />
+    <ClInclude Include="IPanel.hpp" />
+    <ClInclude Include="IPhysics.hpp" />
+    <ClInclude Include="IPrediction.hpp" />
+    <ClInclude Include="IRenderView.hpp" />
+    <ClInclude Include="ISurface.hpp" />
+    <ClInclude Include="IVDebugOverlay.hpp" />
+    <ClInclude Include="IVEngineClient.hpp" />
+    <ClInclude Include="IViewRender.hpp" />
+    <ClInclude Include="IViewRenderBeams.hpp" />
+    <ClInclude Include="IVModelInfoClient.hpp" />
+    <ClInclude Include="IVModelRender.hpp" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="KitParser.hpp" />
+    <ClInclude Include="LagCompensation.hpp" />
+    <ClInclude Include="Material Helper.hpp" />
+    <ClInclude Include="Math.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="Miscellaneous.hpp" />
+    <ClInclude Include="NetMngr.hpp" />
+    <ClInclude Include="Options.hpp" />
+    <ClInclude Include="pIncludes.hpp" />
+    <ClInclude Include="platform.hpp" />
+    <ClInclude Include="PredictionSystem.hpp" />
+    <ClInclude Include="QAngle.hpp" />
+    <ClInclude Include="RebuildGameMovement.hpp" />
+    <ClInclude Include="Recv.hpp" />
+    <ClInclude Include="Resolver.hpp" />
+    <ClInclude Include="SDK.hpp" />
+    <ClInclude Include="Singleton.hpp" />
+    <ClInclude Include="Skinchanger.hpp" />
+    <ClInclude Include="stb_rect_pack.hpp" />
+    <ClInclude Include="stb_textedit.hpp" />
+    <ClInclude Include="stb_truetype.hpp" />
+    <ClInclude Include="Structs.hpp" />
+    <ClInclude Include="Studio.hpp" />
+    <ClInclude Include="Utils.hpp" />
+    <ClInclude Include="UtlBuffer.hpp" />
+    <ClInclude Include="UtlMemory.hpp" />
+    <ClInclude Include="UtlString.hpp" />
+    <ClInclude Include="UtlVector.hpp" />
+    <ClInclude Include="Vector.hpp" />
+    <ClInclude Include="Vector2D.hpp" />
+    <ClInclude Include="Vector4D.hpp" />
+    <ClInclude Include="VFunc.hpp" />
+    <ClInclude Include="Visuals.hpp" />
+    <ClInclude Include="VMatrix.hpp" />
+    <ClInclude Include="VMTManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ragebot.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AntiAim.cpp" />
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="checksum_crc.cpp" />
+    <ClCompile Include="checksum_md5.cpp" />
+    <ClCompile Include="Config Manager.cpp" />
+    <ClCompile Include="Convar.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="Draw Manager.cpp" />
+    <ClCompile Include="Event Listener.cpp" />
+    <ClCompile Include="extrapolation.cpp" />
+    <ClCompile Include="Fakelag.cpp" />
+    <ClCompile Include="Fonts.cpp" />
+    <ClCompile Include="GrenadePrediction.cpp" />
+    <ClCompile Include="Handlers.cpp" />
+    <ClCompile Include="IEngineTrace.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_colorpicker.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx9.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Install.cpp" />
+    <ClCompile Include="KitParser.cpp" />
+    <ClCompile Include="LagCompensation.cpp" />
+    <ClCompile Include="materials.cpp" />
+    <ClCompile Include="Math.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Miscellaneous.cpp" />
+    <ClCompile Include="NetMngr.cpp" />
+    <ClCompile Include="PredictionSystem.cpp" />
+    <ClCompile Include="RebuildGameMovement.cpp" />
+    <ClCompile Include="Resolver.cpp" />
+    <ClCompile Include="Skinchanger.cpp" />
+    <ClCompile Include="Structs.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="UtlBuffer.cpp" />
+    <ClCompile Include="UtlString.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Vector4D.cpp" />
+    <ClCompile Include="Visuals.cpp" />
+    <ClCompile Include="VMatrix.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
